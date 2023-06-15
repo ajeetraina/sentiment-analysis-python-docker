@@ -6,11 +6,8 @@
 git clone https://github.com/ajeetraina/sentiment-analysis-python-docker
 ```
 
-# Install NLTK
-RUN pip install nltk
+# Building Docker Image
 
-# Download required NLTK data
-RUN python -c "import nltk; nltk.download('vader_lexicon')"
 
 
 ```
@@ -18,10 +15,17 @@ RUN python -c "import nltk; nltk.download('vader_lexicon')"
 ```
 
 
-Once the image is built, run the Docker container:
+## Runing the Docker container
 
 ```
 docker run -it sentiment-analysis-app
+```
+
+```
+Enter text for sentiment analysis: I love this product! It exceeded my expectations
+Sentiment Label: Positive
+Sentiment Scores: {'neg': 0.0, 'neu': 0.572, 'pos': 0.428, 'compound': 0.6696}
+
 ```
 
 Enter the text for sentiment analysis when prompted, and the sentiment label and scores will be displayed.
