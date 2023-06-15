@@ -10,7 +10,7 @@ In this updated representation, the key components are:
 
 
 
-
+```
 +---------------------+      +---------------------+      +-------------------------+
 |                     |      |                     |      |                         |
 |   Twitter Data      | ---> |    Sentiment        | ---> |    Sentiment Analysis   |
@@ -23,3 +23,4 @@ In this updated representation, the key components are:
                                    +----------> |      Docker Container    |
                                                 |                          |
                                                 +--------------------------+
+```
